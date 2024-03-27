@@ -2,7 +2,7 @@
   "name": "rename-current-file",
   "displayName": "Rename Current File",
   "description": "Allows you to rename the current file",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "engines": {
     "vscode": "^1.87.0"
   },
