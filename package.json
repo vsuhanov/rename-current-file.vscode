@@ -9,6 +9,11 @@
   "categories": [
     "Other"
   ],
+  "publisher": "vsuhanov",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vsuhanov/rename-current-file.vscode"
+  },
   "activationEvents": [],
   "main": "./out/extension.js",
   "contributes": {

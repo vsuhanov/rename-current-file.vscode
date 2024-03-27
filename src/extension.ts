@@ -7,12 +7,13 @@ export function activate(context: vscode.ExtensionContext) {
 
 		let fileUri = vscode.window.activeTextEditor?.document.uri;
 
-		if (!fileUri && vscode.window.visibleTextEditors.length > 0) {
-			fileUri = vscode.window.visibleTextEditors[0].document.uri;
-		}
 		const input = vscode.window.tabGroups?.activeTabGroup?.activeTab?.input as unknown as { uri: vscode.Uri };
 		if (!fileUri && input?.uri) {
 			fileUri = input.uri as vscode.Uri;
+		}
+
+		if (!fileUri && vscode.window.visibleTextEditors.length > 0) {
+			fileUri = vscode.window.visibleTextEditors[0].document.uri;
 		}
 
 		if (!fileUri) {
